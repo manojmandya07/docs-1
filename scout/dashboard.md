@@ -94,8 +94,37 @@ Each entry in the list shows the following details:
   > Docker Scout bases the calculation behind this severity level on a variety
   > of sources.
 
-- The vulnerability CVE ID.
+- The severity of the vulnerability.
+- The vulnerability CVE ID. Selecting the link for the CVE ID opens [the vulnerability details page](#vulnerability-details-page).
 - The package name and version affected by this CVE.
 - The Common Vulnerability Scoring System (CVSS) score for the vulnerability. Docker Scout shows the highest CVSS score from multiple sources.
 - The number of images in the organization that use the package affected by this CVE.
+- If Docker Scout knows of a fix for the vulnerability, and if so, the package version of the fix.
+
+### Vulnerability details page
+
+<!-- TODO: Screenshot -->
+<!-- TODO: Fix this -->
+The vulnerability details page shows detailed information about a particular CVE. The page shows the following information:
+
+- A description of the vulnerability.
+- The number of packages affected by the vulnerability.
+- The vulnerability publish date.
+- The Common Vulnerability Scoring System (CVSS) score for the vulnerability. Docker Scout shows the highest CVSS score from multiple sources.
+- The CVSS vector for the vulnerability, which is a text representation of a set of CVSS metrics
+
+  > **Note**
+  >
+  > You can find more details on the CVSS vector in the [CVSS v3.1 specification](https://www.first.org/cvss/specification-document#Vector-String).
+
+- The version range of the package affected by the vulnerability.
+- The version of the package that fixes the vulnerability.
+
+Following this information is a list of all images affected by the vulnerability, searchable by image name. Each entry in the list shows the following details:
+
+- The image name. Selecting the link for the image name opens [the image layer view](#image-layer-view).
+- The registry source of the image.
+- The current tag version of the image. Selecting the link for the tag name opens [the image layer view](#image-layer-view).
+- The affected package version in the image.
+<!-- TODO: Link from this page? -->
 - If Docker Scout knows of a fix for the vulnerability, and if so, the package version of the fix.
