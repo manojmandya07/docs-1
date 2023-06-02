@@ -79,6 +79,22 @@ Each entry in the list shows the following details:
 - The package type.
 - The number of images that use the package.
 
+### Images using base image
+
+<!-- TODO: Screenshot -->
+
+The **Images using base image** tab shows all images in an organization that use a specific base image.
+
+Each entry in the list shows the following details:
+
+- The repository name. Selecting the link opens [the list of tags for the repository](#repository-tag-list).
+- The registry location of the repository.
+- The most recent tag of the image and the vulnerabilities for that version. Selecting the link for the tag opens [the comparison view](#comparing-two-tag-images) for the repository.
+- The operating system and architecture of the image.
+- The base image and version used by the repository and the vulnerabilities for that version.
+- The current base image digest for the repository.
+- The date of the last push for the repository.
+
 ## Vulnerabilities
 
 ![Screenshot showing Docker Scout Vulnerabilities list](./images/dashboard-vulns.png)
